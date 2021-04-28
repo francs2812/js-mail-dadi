@@ -1,0 +1,46 @@
+.box {
+    width: 80%;
+    height: 650px;
+    margin: 0 auto;
+    background-color: orange;
+}
+
+.box-pc,
+.box-player {
+    width: 49%;
+    height: 80%;
+    display: inline-block;
+    position: relative;
+}
+.dado {
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-size: cover;
+    background-image: url(../img/dado.png);
+}
+
+.box-pc ,
+.box-player  {
+    text-align: center;
+}
+
+.dado>span {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#risultato {
+    width: 100%;
+    height: 20%;
+    font-size: 100px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    color: red;
+}

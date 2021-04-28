@@ -3,15 +3,19 @@ var numeroPc = Math.floor(Math.random() * 6) + 1;
 console.log(numeroPc);
 
 //chiedere all'utente un numero da 1 a 6
-var numeroUtente = parseInt(prompt("scegli un numero compreso tra 1 e 6"));
+var numeroUtente = Math.floor(Math.random() * 6) + 1;
 console.log(numeroUtente);
 
+//scrivi risultati 
+document.getElementById("dado_utente").innerHTML = numeroUtente;
+document.getElementById("dado_pc").innerHTML = numeroPc;
 // verificare qual'è il numero più grande
 
 if (numeroUtente > numeroPc){
-    alert("hai vinto!")
+    document.getElementById("risultato").innerHTML = "hai vinto!";
 }else if(numeroUtente == numeroPc){
-    alert("pareggio")
+    document.getElementById("risultato").innerHTML = "pareggio";
+    
 }else {
-    alert("hai perso!")
+    document.getElementById("risultato").innerHTML = "hai perso!";
 }
